@@ -41,6 +41,30 @@
             <version>2.0.0.RELEASE</version>
         </dependency>
     </dependencies>
+
+    <profiles>
+        <profile>
+            <id>47maven</id>
+            <repositories>
+                <repository>
+                    <id>47maven</id>
+                    <url>http://47.107.185.140:8081/repository/maven-public/</url>
+                </repository>
+            </repositories>
+            <distributionManagement>
+                <repository>
+                    <id>47maven</id>
+                    <url>http://47.107.185.140:8081/repository/maven-public/</url>
+                </repository>
+                <!--<snapshotRepository>-->
+                <!--<id>wdnexus-snapshot</id>-->
+                <!--<url>https://wdnexus.mapbar.com/content/repositories/snapshots</url>-->
+                <!--</snapshotRepository>-->
+            </distributionManagement>
+        </profile>
+    </profiles>
+
+
     <build>
         <plugins>
             <plugin>
